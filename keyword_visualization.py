@@ -42,5 +42,5 @@ def keyword_visualization(model, keyword, num_nodes=10, font_size=17):
     plt.axis('off')
     nx.draw(G, pos, node_color="brown", node_size=sizes, width=4, with_labels=True, alpha=0.9,
            font_family='NanumGothic', font_size=font_size) # You need NanumBothic font in matplotlib fontlist
-    plt.savefig(keyword + "_" + str(num_nodes) + "_" + str(internal_w2v) + ".png", format="PNG")
+    plt.savefig(keyword + "_" + str(num_nodes) + "_" + str(model) + ".png", format="PNG")
     
